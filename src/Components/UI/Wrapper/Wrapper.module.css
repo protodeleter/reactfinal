@@ -1,0 +1,10 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+    padding: 50px 60px;
+    box-sizing: border-box;
+}

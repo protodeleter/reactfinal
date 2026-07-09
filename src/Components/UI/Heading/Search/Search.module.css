@@ -1,0 +1,21 @@
+.Search-container {
+    position: relative;
+
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 16px;
+}
+.search-input:focus {}
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+}
