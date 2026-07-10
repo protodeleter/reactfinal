@@ -2,6 +2,8 @@ import {useState} from "react";
 
 import styles from './Quotes.module.css';
 import arrQuotes from "../../../db.jsx";
+import SingleQuote from "../SingleQuote/SingleQuote.jsx";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 
@@ -20,17 +22,16 @@ function Quotes()  {
     }
 
     return (
-        <div className={`${styles["quotes"]} d-flex`}>
-            <div className={`${styles.quote}`}>
-                <div className={`${styles["quote-text"]}`}>
-                    { rundomQuotes().quote }
-                </div>
-                <div className={`${styles["quote-name"]}`}>
-                    { rundomQuotes().name }
-                </div>
-            </div>
-            <button onClick={() => {randomizeQuotes()}}>
-                Push
+        <div className={`${styles["quotes"]} d-flex jc-between`}>
+
+
+            <SingleQuote quote={rundomQuotes().quote} author={rundomQuotes().name}>
+
+            </SingleQuote>
+
+            <button onClick={() => {randomizeQuotes()}} className={`${styles['quote-button']}`}>
+                <FontAwesomeIcon icon={['fas', "chevron-right"]} />
+
             </button>
         </div>
     )

@@ -1,0 +1,19 @@
+.SingleQuote {
+    padding: 10px;
+    background-color: #6b6375;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.content {
+    text-align: left;
+    color: #ffffff;
+}
+.author {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}

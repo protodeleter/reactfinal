@@ -1,0 +1,12 @@
+.LeftBlock {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.left-block-title {
+    font-size: 4rem;
+}
+.LeftBlock-quotes {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}

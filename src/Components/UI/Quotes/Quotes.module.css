@@ -1,7 +1,14 @@
 .quotes {
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.quote{
-    font-family: Arial, Helvetica, sans-serif;
+.quote-button {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-color: black;
+    border: none;
+    padding: 10px;
 }

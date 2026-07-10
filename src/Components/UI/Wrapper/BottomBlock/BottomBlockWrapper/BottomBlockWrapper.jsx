@@ -2,12 +2,12 @@ import styles from './BottomBlockWrapper.module.css';
 import Left from "./Left/Left.jsx";
 import Right from "./Right/Right.jsx";
 
-function BottomBlockWrapper() {
+function BottomBlockWrapper({ searchText }) {
  return (
      <div className={`${styles["BottomBlockWrapper"]} d-flex`}>
 
       <Left></Left>
-      <Right></Right>
+      <Right searchText={searchText}></Right>
 
      </div>
  )

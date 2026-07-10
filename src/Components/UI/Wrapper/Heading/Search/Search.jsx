@@ -5,12 +5,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
-function Search() {
+function Search({ searchText, setSearchText }) {
+
 
     return (
         <>
             <div className={styles['Search-container']}>
-                <input type="text" className={`${styles['search-input']}`} placeholder="Search" name="searchInput" />
+
+                <input type="text" className={`${styles['search-input']}`}
+                       placeholder="Search" name="searchInput"
+                       value={searchText}
+                       onChange={(e) => setSearchText(e.target.value)}
+                />
                 <button className={`${styles['search-button']}`} onClick={() => {}}>
                     <FontAwesomeIcon icon={['fas', 'search']} />
                 </button>
